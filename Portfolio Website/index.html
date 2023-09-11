@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muskan Chaurasia - Web developer, Programmer..</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat:wght@300;400;500;600;700&family=Roboto+Slab:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat:wght@300;400;500;600;700&family=Roboto+Slab&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat:wght@300;400;500;600;700&family=Pacifico&family=Roboto+Slab&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about_me">About</a></li>
+                    <li><a href="#skill-section">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+
+        <div class="main">
+            <div class="info_container">
+                
+                <div class="my_info">
+                    <div class="intro">Hi! I'm</div>
+                    <div class="name">Muskan Chaurasia</div><br>
+                    <div class="abt"><span class="auto-type"></span></div><br>
+                    <div class="more_abt">
+                        I'm a Java Programmer, Full Stack Developer in making, aspiring to become a Software Developer in a good tech firm.
+                    </div><br>
+
+                    <div class="buttons">
+                        <a href="MUSKAN_CHAURASIA.pdf" download target="_blank">
+                        <button>Download Resume</button>
+                        <a href="#contact"></a>
+                        <button>Contact Me</button><br>
+
+                        <div class="icons">
+                            <div class="icon1">
+                                <a href="https://www.linkedin.com/in/muskanchaurasia1"></a><i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <div class="icon2">
+                                <a href="https://github.com/MuskanChaurasia-1"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="my_images/2.png" alt="my_image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="about_me">
+
+            <div class="pic">
+                <img src="coder.png" alt="my_pic" id="pic1">
+            </div>
+
+            <div class="about_st">
+                <h1 class="sub-title">About Me</h1><br>
+                <p> I'm a student, currently pursuing Integrated MSc. degree from Sophia Girls' College Autonomous, Ajmer.
+                    I'm on a journey to become proficient in Data Structures & Algorithms using Java programming language.
+                    Along with this, I'm learning Full Stack Web Development which includes Frontend, Backend, Relational(SQL) 
+                    & Non-Relational databases(MongoDB), Git & GitHub. Seeking opportunities to contribute my skills in order 
+                    to learn & grow in a dynamic tech environment. I'm eager to align myself in the ever-evolving tech industry,
+                    exploring where my interests and abilities align.
+                </p><br>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('goals')">Goals</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <br>
+                    <p><h4>Programming Language:</h4> Strong foudnation in programming languages such as Java & JavaScript.
+                        Core knowledge of Object Oriented Programming(OOPS) concepts. Have the ability to adapt & learn new technologies quickly & efficiently.
+                        Capable of crafting clean, efficient & maintainable code and finding innovative solutions to complex problems. 
+                    </p>
+                    <br><br>
+                    <p>
+                        <h4>Web Development:</h4> I'm proficient in creating responsive & visually appealing web interfaces using fundamental Frontend Web
+                        technologies such as HTML, CSS, JavaScript. Able to work with frameworks like BootStrap, etc. I'm committed to crafting web applications
+                        that are not only beautiful but also functional, responsive and accessible. 
+                    </p>
+                    <br><br>
+                    <p>
+                        <h4>Database:</h4> I'm equally passionate about databases & data management. Beginner in SQL, able to run basic queries.
+                        I understand the critical role that data plays in building powerful applications. Keen to learn Advanced SQL & explore NoSQL databases like 
+                        MongoDB to handle unstructured data. 
+                    </p>
+                </div>
+                
+                <br>
+                <div class="tab-contents" id="goals">
+                    <p>
+                        <h4>Master Emmerging Technologies: </h4>  I aspire to stay at the forefront of technology, whether it's learning the latest programming 
+                        languages, exploring the potential of artificial intelligence, or diving deeper into Software Development & Full Stack Development. 
+                        I aspire to be a versatile technologist who can adapt to and harness the power of emerging tech trends.
+                    </p>
+                    <br><br>
+                    <p><h4>Contributing to Open Source:</h4> In the coming years, I aim to actively contribute to open-source projects that align with my 
+                        interests, skills and expertise. By collaborating with others, I hope to make a positive impact on the software development ecosystem.
+                    </p>
+                    <br><br>
+                    <p>
+                        <h4>Building Scalable and Impactful Applications:</h4> My goal is to design and develop software solutions that not only solve specific
+                            problems but also have a broader impact. I aspire to work on projects that can scale and make a meaningful difference in users' lives or
+                            in various industries.
+                    </p>
+                    <br><br>
+                    <p>
+                        <h4>Work in a good Tech Company:</h4>I aim to work in a Tech company where I could learn & work with new technologies. Learning is a life-long
+                        process, therefore I wish to work in an environment where my surrouding people help me grow in every aspect of life whether it is personally, professionally or mentally.
+                    </p>
+                </div>
+
+                <br>
+                <div class="tab-contents" id="education">
+                    <p>
+                        <h4>Integrated MSc.IT(2020-2024):</h4> I'm currently pursuing Integrated MSc.IT degree from Sophia Girls' College Autonomous, Ajmer.
+                        This is a 4-year integrated course which is equivalent to a BCA + MCA degree. In the admist of my course I learnt many new and interesting programming languages
+                        like C, C++, Java, Python, VB.NET, Android Applications, etc. 
+                    </p><br><br>
+                    <p>I'm presently learning four new technologies which include R Programming language, Cloud Computing, Artificial Intelligence & Internet Of Things(IOT).</p>
+                </div>
+
+            </div>
+        </div>
+        
+        
+        <!-- skills -->
+        <div id="skill-section">
+            <div class="skill-head">
+                <h2 id="sk">My Skills</h2>
+            </div>
+
+            <div class="skill-main">
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>C</p>
+                        <p>65%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="c"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>C++</p>
+                        <p id="per">65%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="cpp"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Java</p>
+                        <p id="per">85%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="java"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>HTML</p>
+                        <p id="per">90%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <p id="per">70%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>JavaScript</p>
+                        <p id="per">75%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="js"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>MySQL</p>
+                        <p id="per">65%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="mysql"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Git</p>
+                        <p id="per">70%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="git"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>R</p>
+                        <p class="percent">80%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="r"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+            <!-- portfolio -->
+            <div id="portfolio">
+                <div class="container">
+                    <h1 class="sub-titles">My Work</h1>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="amazon.png" alt="work_1">
+                            <div class="layer">
+                                <br>
+                                <h3>Amazon Home Page Clone</h3><br>
+                                <p>I designed a basic Amazon HomePage Website clone using</p>
+                                <p>HTML & CSS. It has an eye-catchy interface which looks very much</p>
+                                <p>similar to the original website.</p>
+                                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="spotify.png" alt="work_2">
+                            <div class="layer">
+                                <br>
+                                <h3>Spotify Clone</h3><br>
+                                <p>I designed a basic Spotify clone using HTML & Vanilla CSS.</p>
+                                <p>It contains a Sidebar, Recent PlayList, Progress Bar which makes it look quite</p>
+                                <p>similar to the original Spotify website.</p>
+                                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn">See more</a>
+
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                            <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                            <div class="soc-icons">
+                                <a href="www.linkedin.com/in/muskanchaurasia1"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/MuskanChaurasia-1"><i class="fa-brands fa-github"></i></a>
+                                <a href="chaurasiamuskan@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                            <a href="MUSKAN_CHAURASIA.pdf" download class="btn btn2">Download Resume</a>
+                        </div>
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                                <button type="submit" class="btn btn3">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="copyright">
+                <p>Copyright ©. Made with <span> &hearts; </span> by Muskan.</p>
+            </div>
+
+
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                 for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                 }
+                 
+                 for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                 }
+                 event.currentTarget.classList.add("active-link");
+                 document.getElementById(tabname).classList.add("active-tab");
+            } 
+
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.left="0";
+            }
+            function closemenu(){
+                sidemenu.style.left="-200px";
+            }
+
+        </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbydMQt2ZAMzaIzEKEZ9pSOkDXGt-OCxkmWzDBjq7aobfw7si73Pn-OKQrHxzx-mB5--/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML="";
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed(".auto-type",{
+        strings: ["Student","Programmer","Web Developer"],
+        typeSpeed: 150,
+        backspeed: 150,
+        loop: true
+    })
+</script>
+</body>
+</html>

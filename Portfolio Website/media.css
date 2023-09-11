@@ -1,0 +1,132 @@
+/* for small-screen sizes */
+@media only screen and (max-width: 600px){
+    .main{
+        height: auto;
+        width: 100%;
+    }
+    .main .info_container{
+        margin-left: 5rem;
+    }
+    .main .info_container .my_info{
+        padding-left: 16px;
+    }
+
+    .main .info_container .my_info .intro{
+        /* padding-left: 20rem; */
+        font-size: 45px;
+    }
+    .main .info_container .my_info .name{
+        /* padding-left: 20rem; */
+        font-size: 35px;
+        font-weight: bold;
+        color: #ff004f;
+        /* font-family: 'Pacifico', cursive; */
+        font-family: 'Lobster', cursive;
+    }
+    .main .info_container .my_info .abt{
+        /* padding-left: 20rem; */
+        font-size: 20px;
+    }
+
+    .main .info_container .more_abt{
+        size: 1px;
+        font-size: 15px;
+        margin-top: 30px;
+    }
+
+    img{
+        /* padding-left: 20rem; */
+
+        height: 300px;
+        width: 300px;
+       
+    }
+
+    .buttons button{
+        padding: 4px 9px;
+        font-size:x-small;
+    }
+
+    .pic {
+        display:none;
+    }
+
+    .about_st{
+     height: auto;
+     width: 100%;
+    }
+
+    #skill-section{
+        margin-top: 100px;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+
+    #about_me{
+        height: auto;
+        width: 100%;
+        /* display: flex; */
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-left{
+        align-self: center;
+    }
+    .contact-right{
+        align-self: center;
+    }
+    #portfolio{
+        align-self: center;
+        height: auto;
+        width: 100vw;
+    }
+    
+    .work-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .work{
+        padding-bottom: 3rem;
+    }
+    .btn{
+        margin-right: 25rem;
+        /* align-self: center; */
+    }
+    #contact{
+        margin-left: 9rem;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+
+    nav ul{
+        background-color: #ff004f;
+        position: fixed;
+        top: 0;
+        left: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 1px;
+        z-index: 2;
+        transition: left 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 17px;
+        left: 125px;
+        cursor: pointer;
+    }
+    .copyright{
+        font-size: 10px;
+    }
