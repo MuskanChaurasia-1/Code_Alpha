@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+    <script defer src="/nodeServer/node_modules/@socket.io/component-emitter/index.js"></script>
+    <script defer src="\.vscode\client.js"></script>
+    <link rel="icon" href="whats.ico" id="logo" type="icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Lobster&family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@200&family=Pacifico&family=Roboto+Slab&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="main_box">
+            <div class="side_bar">
+                <header>
+
+                    <div class="up">
+                        <div class="pro">
+                            <img src="pro2.jpeg" alt="profile">
+                        </div>
+
+                        <div class="icons">
+                            <span><i class="fa-solid fa-users"></i></span>
+                            <span><i class="fa-regular fa-circle"></i></span>
+                            <span><i class="fa-solid fa-message"></i></span>
+                            <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                        </div>
+                    </div>
+
+                </header>
+
+                <div class="search_bar">
+                    <div class="searchbox">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" id="search">
+                    </div>
+                    <div class="bars">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+
+                <div class="people">
+
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="pro.png" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>Mom</span>
+                                <span>Today</span>
+                            </div>
+                            <div class="mssg">
+                                <span>I love you mom..&hearts;</span>
+                                <span id="no">5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="prof.jpeg" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>Anshu</span>
+                                <span>Yesterday</span>
+                            </div>
+                            <div class="mssg">
+                                <span>How are you?</span>
+                                <span id="no"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="img1.jpeg" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>Lavina</span>
+                                <span>Yesterday</span>
+                            </div>
+                            <div class="mssg">
+                                <span>Have you completed the R assignment?</span>
+                                <span id="no">2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="img2.jpeg" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>Dad</span>
+                                <span>23h ago</span>
+                            </div>
+                            <div class="mssg">
+                                <span>I am out for a movie with my friends today..</span>
+                                <span id="no">1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="img3.jpeg" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>Aarya</span>
+                                <span>1 day ago</span>
+                            </div>
+                            <div class="mssg">
+                                <span>I have sent you the IOT assignment.</span>
+                                <span id="no"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="img4.jpeg" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>Meera</span>
+                                <span>2 days ago</span>
+                            </div>
+                            <div class="mssg">
+                                <span>What's up Meera?</span>
+                                <span id="no">3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="img5.jpeg" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>Didss</span>
+                                <span>2 days ago</span>
+                            </div>
+                            <div class="mssg">
+                                <span>Happy Birthday didss.&hearts;&hearts;</span>
+                                <span id="no">1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="img6.jpeg" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>Manan</span>
+                                <span>4 days ago</span>
+                            </div>
+                            <div class="mssg">
+                                <span>Your tuition timing has been changed to 2 PM.</span>
+                                <span id="no">1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="img7.jpeg" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>Ma'am Ritu</span>
+                                <span>5 Sept</span>
+                            </div>
+                            <div class="mssg">
+                                <span>Happy Teacher's Day Ma'am&hearts;</span>
+                                <span id="no">1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="img8.jpeg" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>Dhruv</span>
+                                <span>7 days ago</span>
+                            </div>
+                            <div class="mssg">
+                                <span>Congratulations for you success bro!!</span>
+                                <span id="no">2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="img9.jpeg" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>Vansh</span>
+                                <span>1 week ago</span>
+                            </div>
+                            <div class="mssg">
+                                <span>What are doing this Sunday?</span>
+                                <span id="no">2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="img10.jpeg" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>IT_Dept</span>
+                                <span>10 August</span>
+                            </div>
+                            <div class="mssg">
+                                <span>Meeting timing: 3 PM sharp in College Hall</span>
+                                <span id="no">5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="img11.jpeg" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>Mitali</span>
+                                <span>11 August</span>
+                            </div>
+                            <div class="mssg">
+                                <span>When are you coming to Ajmer? </span>
+                                <span id="no">2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="img3.jpeg" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>Ayesha</span>
+                                <span>2 weeks ago</span>
+                            </div>
+                            <div class="mssg">
+                                <span>Let's catch up tonight!!</span>
+                                <span id="no">1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="img8.jpeg" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>Lovely</span>
+                                <span>2 month ago</span>
+                            </div>
+                            <div class="mssg">
+                                <span>Are you coming to college today?</span>
+                                <span id="no">4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="img2.jpeg" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>Rishika</span>
+                                <span>2 months ago</span>
+                            </div>
+                            <div class="mssg">
+                                <span>Wish you all the best for your exams..</span>
+                                <span id="no">2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="img6.jpeg" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>Anisha</span>
+                                <span>2 months ago</span>
+                            </div>
+                            <div class="mssg">
+                                <span>Get well soon dear..</span>
+                                <span id="no">5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="img3.jpeg" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>Parineeti</span>
+                                <span>2 July</span>
+                            </div>
+                            <div class="mssg">
+                                <span>Where have you been all day?</span>
+                                <span id="no">11</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="img10.jpeg" alt="pro1">
+                        </div>
+                        <div class="message">
+                            <div class="name">
+                                <span>Alia</span>
+                                <span>15 June</span>
+                            </div>
+                            <div class="mssg">
+                                <span>Hope everything goes well in my new job..</span>
+                                <span id="no">1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div id="ppl">
+                            <img src="img5.jpeg" alt="pro1">
+                        </div>
+                        <div class="message last">
+                            <div class="name">
+                                <span>Sahiba</span>
+                                <span>22 May</span>
+                            </div>
+                            <div class="mssg">
+                                <span>Are you awake?</span>
+                                <span id="no">1</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="chat_area">
+                <div class="home">
+                    <!-- <div class="center">
+                        <div class="box">
+                            <div class="img">
+                                <img src="native-desktop-hero.png" alt="desktop" id="img1">
+                            </div>
+                            <div class="desc">
+                                <h1>Download Whatsapp for Windows</h1>
+                                <div class="text">
+                                    Make calls, share your screen and get a faster experience when you download the <br> Windows app.
+                                </div>
+                            </div>
+                            <div class="btn">
+                                <button>Get the app</button>
+                            </div>
+                        </div>
+
+                        <div class="end">
+                            <i class="fa-solid fa-lock"></i> &nbsp;&nbsp; <p>End-to-end encrypted</p>
+                        </div>
+                    </div> -->
+
+                    <header>
+
+                        <div class="up">
+                            <div class="pro">
+                                <img src="pro2.jpeg" alt="profile">
+                            </div>
+    
+                            <div class="icons">
+                                <span><i class="fa-solid fa-video"></i></span>
+                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                            </div>
+                        </div>
+    
+                    </header>
+
+                    <div class="chat_container">
+                        <div class="msg right">Muskan: Hey! How are you?</div>
+                        <div class="msg left">Lavina: I'm good..How about you?</div>
+                        <div class="msg right">Muskan: I'm good too..</div>
+                        <div class="msg left">Lavina: Have you completed the IOT project?</div>
+                        <div class="msg right">Muskan: Yes! I've completed it.</div>
+                        <div class="msg left">Lavina: Ohh!! Great..</div>
+                    </div>
+                    
+                    <div class="footer">
+                        <div class="typing">
+
+                            <div id="icn">
+                                <span><i class="fa-regular fa-face-smile"></i></span>
+                                <span><i class="fa-solid fa-plus"></i></span>
+                            </div>
+
+                            <div id="send_area">
+                                <form action="#" id="send_container">
+                                    <input type="text" name="messageInp" id="messageInp" label="Type a message">
+                                </form>
+                            </div>
+
+                            <div id="send">
+                                <button class="bttn"><img src="send (1).png" alt="send"></button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+    <script>var exports= {};</script>
+    <!-- <script>var require = {};</script> -->
+    <!-- <script>var io = {};</script> -->
+    <script src="\nodeServer\index.js"></script>
+
+</body>
+</html>
