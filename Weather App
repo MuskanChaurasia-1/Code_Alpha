@@ -1,0 +1,2 @@
+This is a weather app which gives weather updates of any city entered by the user. 
+It uses OpenWeatherMap API to  fetch real-time weather updates such as temperature in Celsius, humidity, wind speed, etc.
