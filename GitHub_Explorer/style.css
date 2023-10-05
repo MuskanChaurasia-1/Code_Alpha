@@ -1,0 +1,128 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.4rem;
+    margin-right: 20rem;
+    width: 100%;
+    height: 100%;
+    background-image: url(image\ 1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Merriweather', serif;
+    
+}
+main{
+    background-color: #485460;
+    height: auto;
+    width: 65rem;
+    display: flex;
+    border-radius: 30px 0;
+    margin-left: 25rem;
+    margin-top: -1rem;
+    
+}
+.card{
+    /* background-color:brown; */
+    /* border: 4px solid rgb(255, 255, 0); */
+    
+    border-radius: 30px 0;
+    height: auto;
+    width: 100rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+}
+.user_details{
+    /* background-color: brown; */
+    padding-left: 3rem;
+    padding-top: 3rem;
+    width: 50rem;
+    height: auto;
+}
+.user_details h2{
+    padding-bottom: 2rem;
+    color: white;
+}
+.user_details h5{
+    padding-bottom: 2rem;
+    color: white;
+}
+
+#repos{
+    /* background-color: brown; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 0.7rem;
+    padding-bottom: 1rem;
+}
+.repo{
+    background-color:#b2bec3;
+    text-decoration: none;
+    width:10rem;
+    color: inherit;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size:small ;
+    padding-left: 2px;
+}
+.repo:hover{
+    width: 10.5rem;
+    background-color: #4bcffa;
+    transition: 0.5s;
+    transition-timing-function:ease-out;
+}
+.info ul li{
+    /* background-color: brown; */
+    padding-bottom: 2rem;
+    padding-right: 3.5rem;
+    color: white;
+}
+.det{
+    display: flex;
+    list-style-type: none;
+    /* background-color: brown; */
+}
+
+#heading{
+    margin-top: -0.2rem;
+    padding-bottom: -7px;
+    padding-right: 69rem;
+    font-family: 'Special Elite', cursive;
+    font-size: 2.5rem;
+}
+main img{
+    border-radius: 50%;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    height: 11rem;
+    width: 11rem;
+    border: 2px solid white;
+}
+main img:hover{
+    border: 4px solid #4bcffa;
+    height: 11.5rem;
+    width: 11.5rem;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#form{
+    padding-bottom: 3rem;
+}
+#inp{
+    width: 35rem;
+    height: 3.6rem;
+    border-radius: 20px;
+    border: 3px solid #1A2421;
+    background-color: #d2dae2;
+    padding-left: 1rem;
+    font-size: larger;
+    margin-top: -2rem;
+}
+
+

@@ -1,0 +1,100 @@
+@media only screen and (max-width: 600px){
+    
+    main{
+        /* background-color: #485460; */
+        height: auto;
+        width: auto;
+        max-width: 375px;
+        display: flex;
+        /* border-radius: 30px 0; */
+        margin-left: 1rem;
+    }
+    .card{
+        border-radius: 30px 0;
+        height: auto;
+        width: 100rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items:flex-start;
+    }
+    #inp{
+        width: 25rem;
+        height: 3.6rem;
+        margin-left: 4rem;
+        margin-top: 1rem;
+    }
+    #heading{
+        /* margin-top: 2rem; */
+        margin-top: -2rem;
+        padding-right: 8rem;
+        font-family: 'Special Elite', cursive;
+        font-size: 2.5rem;
+    }
+    main img{
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+        height: 5rem;
+        width: 5rem;
+        border: 1px solid white;
+    }
+    main img:hover{
+        border: 3px solid #4bcffa;
+        height: 5.5rem;
+        width: 5.5rem;
+        transition: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    .user_details{
+        padding-left: 1rem;
+        padding-top: 1.6rem;
+        width: 30rem;
+        height: auto;
+    }
+    .user_details h2{
+        padding-bottom: 1rem;
+        color: white;
+        font-size:large;
+
+    }
+    .user_details h5{
+        font-size:small;
+        padding-bottom: 1rem;
+        color: white;
+        border-bottom: 1px solid white;
+    }
+    .det{
+        display: flex;
+        font-size: small;
+        list-style-type: none;
+        flex-direction: column;
+        border-bottom: 1px solid white;
+        margin-top: 6px;
+        
+    }
+    .info ul li{
+        /* background-color: brown; */
+        padding-bottom: 0.5rem;
+        padding-right: 3.5rem;
+        color: white;
+    }
+    #repos{
+        display: grid;
+        grid-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        margin-left: -7rem;
+        width: fit-content;
+    }
+    .repo{
+        background-color:#b2bec3;
+        text-decoration: none;
+        width:10rem;
+        color: inherit;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size:small ;
+        margin-left: 1rem;
+    }
+}
