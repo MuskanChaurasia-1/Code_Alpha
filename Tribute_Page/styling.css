@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    height:fit-content;
+    width:fit-content;
+    /* background-color: blueviolet; */
+    padding-top: 8rem;
+}
+#main_1 img{
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+}
+.main h1{
+    font-size: 5rem;
+    padding-bottom: 1.5rem;
+    font-family:'Times New Roman', Times, serif;
+}
+#intro{
+    margin-top: -19rem;
+    padding-left: 33rem;
+    height: fit-content;
+    width: fit-content;
+}
+#intro h2{
+    font-style: italic;
+    position: relative;
+    margin-left: 14rem;
+}
+#main_1{
+    height: fit-content;
+    width: fit-content;
+    padding-left: 4rem;
+}
+.desc{
+    background-color:cornsilk;
+    padding-top: 5rem;
+    margin-top: 14rem;  
+    display: grid;
+    grid-gap: 4rem; 
+    /* padding-bottom: 2rem;        */
+}
+.desc h2{
+    position: relative;
+    margin-left: 5rem;
+    font-size: 2rem;
+}
+.desc p{
+    position: relative;
+    margin-left: 5rem;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    font-family:monospace;
+}
+.achieve ul li{
+    position: relative;
+    margin-left: 5rem;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    font-family:cursive;
+}
+.bottom{
+    height: 7rem;
+    width: 100vw;
+    background-color:cadetblue;
+}
+.bottom h5{
+    padding-left: 44rem;
+    padding-top: 3rem;
+}
+.obj img{
+    margin-left: 30rem;
+    height: 33rem;
+    width: 31rem;
+    padding-top: 4rem;
+}
